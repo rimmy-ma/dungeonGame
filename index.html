@@ -1,47 +1,41 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dungeons of Loot</title>
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/startgame.css">
+    <title>Amazing Dungeons</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet"> <!-- Pixelated font -->
     <style>
-        body {
-            background-image: url(./img/donghun-lee-2-01.jpg);
-            background-size: cover;
-        }
-     
-        .W { background-image: url('./img/unnamed.png'); background-size: cover; }
-        .E { background-image: url('./img/téléchargement.jpg'); background-size: cover; }
-        .M { background-image: url('./img/Axolotl.webp'); background-size: cover; }
-        .T { background-image: url('./img/treasure.png'); background-size: cover; }
-        .B { background-image: url('./img/png-clipart-minecraft-player-versus-player-sword-graphic-artist-three-dimensional-space-mine-planter-service-rush-combat.png'); background-size: cover; }
-        .H { background-image: url(./img/food.jpg); background-size: cover; }
-
-        
+      body {
+        background: url(./img/tumblr_n1dbbe4Ksd1rs0nhyo1_500.gif);
+      }
+      
     </style>
 </head>
 <body>
-    <div id="player-name"></div>
-
-    <div id="game-header">
-        <div id="health-bar-container">
-            <div id="health-bar">
-                <div id="health-inner"></div> <!-- This is the inner part of the health bar -->
-            </div>
-            <button id="restart-button">   Restart</a>
-            </button>
-        </div>
-        <div id="score-container">
-            <progress id="scoreBar" value="0" max="400"></progress>
-            <span id="scoreDisplay">Score: 0</span>
+    <div class="menu">
+        <h1>Amazing Dungeons</h1>
+        <h2>Can you do it? It's bloody hard!</h2>
+        <div class="menu-items">
+            <input type="text" placeholder="Enter your name" class="name-input">
+            <a href="./startgame.html" class="play-button" onclick="return play()">Play</a>
         </div>
     </div>
-
-
-    <div id="game-board"></div>
-    <button id="back-to-start-button" onclick="window.location.href='./startgame.html'">Back to Start</button>
-    <script src="./js/script.js"></script>
+    <script>
+      function play() {
+        const playerName = document.querySelector('.name-input').value;
+        if (!playerName.trim()) {
+          alert('Please enter your name.');
+          return false; // Prevents redirection if name is empty
+        }
+        localStorage.setItem('playerName', playerName);
+        return true; // Continues redirection if name is filled
+      }
+    </script>
+    
 </body>
-
 </html>
