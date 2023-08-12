@@ -1,0 +1,106 @@
+
+
+
+body {
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    font-family: 'Nova Square', cursive;
+    padding: 0;
+    overflow: hidden;
+    background: #3760aa;
+    background: -webkit-linear-gradient(to left, #243B55, #141E30);
+    background: linear-gradient(to left, #243B55, #141E30);
+}
+
+#game-header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    background: rgba(0, 0, 0, .6);
+}
+
+#health-bar-container {
+    display: flex;
+    align-items: center;
+}
+
+#health-bar {
+    width: 200px;
+    height: 20px;
+    background-color: grey;
+    margin-left: 10px; /* Space between player name and health bar */
+}
+
+#health-bar div {
+    width: 100%; /* You'll update this with JS */
+    height: 100%;
+    background-color: green;
+}
+
+#score-container {
+    display: flex;
+    align-items: center;
+}
+
+#health-inner {
+    width: 100%; /* You'll update this with JS */
+    height: 100%;
+    background-color: green;
+}
+
+#game-board {
+    position: relative;
+    width: 660px;
+    height: 420px;
+    display: grid;
+    grid-template-columns: repeat(33, 20px);
+    grid-template-rows: repeat(21, 20px);
+}
+
+#back-to-start-button {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    padding: 5px 10px; /* Reduced size */
+    font-size: 12px; /* Reduced text size */
+}
+
+#restart-button, #back-to-start-button {
+    background: #8B4513;
+    color: #FFF;
+    border: 3px solid #A0522D;
+    padding: 5px 10px; /* Reduced size */
+    font-family: 'Press Start 2P', cursive;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#restart-button:hover, #back-to-start-button:hover {
+    background: #A0522D;
+}
+
+#restart-button {
+    position: absolute;
+    top: 10px;
+    left: 450px; /* Positioned to the right of the health bar */
+    font-size: 12px; /* Reduced text size */
+}
+
+#player-name {
+    color: white;
+    font-size: 14px;
+    font-family: 'Press Start 2P', cursive; /* Pixelated font style */
+    background: url('./img/wood_texture.png'); /* Example wood texture */
+    padding: 5px;
+}

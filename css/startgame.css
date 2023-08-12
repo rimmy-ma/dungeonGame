@@ -1,0 +1,114 @@
+body {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    font-family: 'Roboto', sans-serif;
+    background: #3760aa;
+    background: -webkit-linear-gradient(to left, #243B55, #141E30);
+    background: linear-gradient(to left, #243B55, #141E30);
+  }
+  
+  .menu {
+    max-width: 100%;
+    max-height: 100%;
+    width: 380px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .menu h1 {
+    color: white;
+    margin-top: 140px;
+    font-size: 38pt;
+    text-align: center;
+    font-family: 'Rye', cursive;
+  }
+  
+  .menu h2 {
+    text-align: center;
+    color: white;
+    font-family: 'Bree Serif', serif;
+  }
+  
+  .menu-items {
+    margin-top: 60px;
+    width: 244px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .menu a {
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    display: block;
+    width: 160px;
+    text-align: center;
+    margin-top: 20px;
+    -moz-box-shadow: 3px 4px 0px 0px #5287b5;
+    -webkit-box-shadow: 3px 4px 0px 0px #5287b5;
+    box-shadow: 3px 4px 0px 0px #5287b5;
+    background-color: #79bbff;
+    border: 1px solid #337bc4;
+    cursor: pointer;
+    color: #ffffff;
+    font-family: Arial;
+    font-size: 24pt;
+    font-weight: bold;
+    padding: 12px 44px;
+    text-shadow: 0px 1px 0px #528ecc;
+  }
+  
+  .menu a:active {
+    position: relative;
+    top: 1px;
+  }
+  
+  .menu a:hover {
+    background-color: #378ee5;
+  }
+  
+  .game {
+    display: none;
+  }
+  
+
+ 
+  
+  .btn-start {
+    position: fixed;
+    margin-left: 0px;
+    margin-top: 0px;
+    display: block;
+    width: 24px;
+    height: 24px;
+    color: white;
+    background-color: rgba(21, 214, 38, 0.7);
+    display: none;
+    text-align: center;
+    font-weight: bold;
+    text-decoration: none;
+    line-height: 24px;
+    cursor: none;
+  }
+  
+ 
+  
+  .name-input {
+    display: block;
+    width: 160px;
+    margin: 10px auto 20px;
+    padding: 10px;
+    text-align: center;
+    font-size: 16pt;
+    color: white;
+    background-color: #79bbff;
+    border: 1px solid #337bc4;
+    outline: none;
+    font-family: Arial;
+    text-shadow: 0px 1px 0px #528ecc;
+  }
+  
+  .name-input:focus {
+    border-color: #378ee5;
+  }
