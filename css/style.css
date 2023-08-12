@@ -16,14 +16,17 @@ body {
     background: linear-gradient(to left, #243B55, #141E30);
 }
 
-#game-board {
-    position: relative;
-    width: 800px; /* Increased width of the game board */
-    height: 520px; /* Increased height of the game board */
-    margin: 0 auto; /* Center the game board horizontally */
-    display: grid;
-    grid-template-columns: repeat(40, 20px);
-    grid-template-rows: repeat(26, 20px);
+#game-header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 75px;
+   
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    background: rgba(0, 0, 0, .6);
 }
 
 #health-bar-container {
@@ -47,7 +50,7 @@ body {
 #score-container {
     display: flex;
     align-items: center;
-    color: white; /* Change score text color to white */
+    color: aqua;
 }
 
 #health-inner {
